@@ -58,6 +58,5 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         Debug.Log(PhotonNetwork.LocalPlayer.NickName + "connected to photon");
     }
 
-
     #endregion
 }
