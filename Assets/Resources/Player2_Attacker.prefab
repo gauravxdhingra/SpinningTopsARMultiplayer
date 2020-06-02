@@ -650,6 +650,7 @@ GameObject:
   - component: {fileID: 1802076417471478442}
   - component: {fileID: 1802076417471478437}
   - component: {fileID: 1802076417471478443}
+  - component: {fileID: 6713057918855851824}
   - component: {fileID: 878784749}
   m_Layer: 0
   m_Name: Player2_Attacker
@@ -717,6 +718,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &6713057918855851824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1802076417471478439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5e4ebe61532259449bd00994a6cd050, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spinSpeed: 3600
+  doSpin: 1
+  playerGraphics: {fileID: 1802076418753269999}
 --- !u!114 &878784749
 MonoBehaviour:
   m_ObjectHideFlags: 0

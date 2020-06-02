@@ -378,6 +378,7 @@ GameObject:
   - component: {fileID: 4663518797756989784}
   - component: {fileID: 8809286902871117338}
   - component: {fileID: 6971361673331439949}
+  - component: {fileID: 4525214581273317573}
   - component: {fileID: 7903975634865179176}
   m_Layer: 0
   m_Name: Player4_Defender
@@ -471,6 +472,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.01, z: 0.15}
   m_Center: {x: 0.01, y: 0.12, z: 0.16}
+--- !u!114 &4525214581273317573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4663518797756989780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5e4ebe61532259449bd00994a6cd050, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spinSpeed: 3600
+  doSpin: 1
+  playerGraphics: {fileID: 4663518796474149660}
 --- !u!114 &7903975634865179176
 MonoBehaviour:
   m_ObjectHideFlags: 0

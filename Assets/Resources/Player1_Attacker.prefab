@@ -70,7 +70,7 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0, b: 0.24206924, a: 1}
+      key0: {r: 0.9174047, g: 1, b: 0.5613208, a: 1}
       key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
@@ -306,6 +306,7 @@ GameObject:
   - component: {fileID: 2523371896380985838}
   - component: {fileID: 2523371896380985824}
   - component: {fileID: 7334487426773946261}
+  - component: {fileID: 1332675377}
   m_Layer: 0
   m_Name: Player1_Attacker
   m_TagString: Player
@@ -388,6 +389,21 @@ MonoBehaviour:
   speed: 2
   maximumVelocityChange: 4
   tiltAmount: 10
+--- !u!114 &1332675377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2523371896380985836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5e4ebe61532259449bd00994a6cd050, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spinSpeed: 3600
+  doSpin: 1
+  playerGraphics: {fileID: 2523371895095917476}
 --- !u!1 &2523371896480695252
 GameObject:
   m_ObjectHideFlags: 0
