@@ -6,10 +6,11 @@ public class MovementController : MonoBehaviour
 {
 
     public Joystick joystick;
-    public float speed=4;
+    public float speed=2f;
     private Vector3 velocityVector=Vector3.zero;//Initial Velocity
     private Rigidbody rb;
-    public float maximumVelocityChange=4;
+    public float maximumVelocityChange=4f;
+    public float tiltAmount=10;
 
 
     // Start is called before the first frame update
@@ -34,6 +35,8 @@ public class MovementController : MonoBehaviour
 
         // Apply movement
         Move(_movementVelocityVector);
+
+           transform.rotation= Quaternion.Euler(joystick.Vertical*speed*tiltAmount, 0, -1*joystick.Horizontal*speed*tiltAmount);
     }
 
     void Move(Vector3 movementVelocityVector){
