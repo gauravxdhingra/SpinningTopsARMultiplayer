@@ -380,8 +380,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: OnEnterGameButtonClicked
+      - m_Target: {fileID: 792770278}
+        m_MethodName: onEnterGameButtonClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -604,7 +604,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &644936268
 RectTransform:
   m_ObjectHideFlags: 0
@@ -909,6 +909,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerNameInputField: {fileID: 897141428}
+  ui_LoginGameObject: {fileID: 1867033495}
+  ui_LobbyGameObject: {fileID: 678248421}
+  ui_3dGameObject: {fileID: 213413509}
+  ui_connectionStatusGameObject: {fileID: 644936267}
+  connectionStatusText: {fileID: 1209188605}
+  showConnectionStatus: 0
 --- !u!4 &792770279
 Transform:
   m_ObjectHideFlags: 0
@@ -1874,7 +1880,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 1.83672e-40, w: -3.11e-43}
+  m_BoundingSphereOverride: {x: -1, y: 18, z: 29, w: -19}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -2210,8 +2216,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: OnQuickMatchButtonClicked
+      - m_Target: {fileID: 792770278}
+        m_MethodName: onQuickMatchButtonClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
