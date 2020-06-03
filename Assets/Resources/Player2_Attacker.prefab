@@ -652,6 +652,8 @@ GameObject:
   - component: {fileID: 1802076417471478443}
   - component: {fileID: 6713057918855851824}
   - component: {fileID: 878784749}
+  - component: {fileID: 1541673369825799831}
+  - component: {fileID: -3269749788961115406}
   m_Layer: 0
   m_Name: Player2_Attacker
   m_TagString: Player
@@ -749,6 +751,41 @@ MonoBehaviour:
   speed: 2
   maximumVelocityChange: 4
   tiltAmount: 10
+--- !u!114 &1541673369825799831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1802076417471478439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 0
+  OwnershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 0}
+  viewIdField: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &-3269749788961115406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1802076417471478439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0203fe56b429a644f979c010cfb4e656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerNameText: {fileID: 1802076417369794717}
 --- !u!1 &1802076418753269999
 GameObject:
   m_ObjectHideFlags: 0
