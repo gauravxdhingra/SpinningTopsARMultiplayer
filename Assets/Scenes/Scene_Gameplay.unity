@@ -7830,6 +7830,7 @@ MonoBehaviour:
   uI_InformText: {fileID: 243443568}
   searchForGamesButtonGameobject: {fileID: 623289035}
   adjust_Button: {fileID: 905712417}
+  raycastCenter_Image: {fileID: 1567862419}
 --- !u!4 &1931022165
 Transform:
   m_ObjectHideFlags: 0
