@@ -816,11 +816,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39fb75d874b70304590183f014aa9382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spinnerScript: {fileID: 0}
-  uI_3D_Gameobject: {fileID: 0}
-  deathPanelUIPrefab: {fileID: 0}
-  spinSpeedBar_Image: {fileID: 0}
-  spinSpeedRatio_Text: {fileID: 0}
+  spinnerScript: {fileID: 6713057918855851824}
+  uI_3D_Gameobject: {fileID: 1802076417165274025}
+  deathPanelUIPrefab: {fileID: 3593783272886976281, guid: 0367e5d2c0c49da4b80c7fe1c169056c,
+    type: 3}
+  spinSpeedBar_Image: {fileID: 1802076416973763616}
+  spinSpeedRatio_Text: {fileID: 100848075634437743}
   common_Damage_Coefficient: 0.04
   isAttacker: 0
   isDefender: 0
