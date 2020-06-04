@@ -5,7 +5,7 @@ using Photon.Pun;
 using Photon.Realtime;
 using TMPro;
 
-public class SpinningTopsGameManager :MonoBehaviourPunCallbacks
+public class SpinningTopsGameManager : MonoBehaviourPunCallbacks
 {
 
     [Header("UI")]
@@ -20,14 +20,14 @@ public class SpinningTopsGameManager :MonoBehaviourPunCallbacks
     void Start()
     {
         uI_InformPanelGameobject.SetActive(true);
-       
+
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     #region UI Callback Methods
@@ -55,7 +55,7 @@ public class SpinningTopsGameManager :MonoBehaviourPunCallbacks
         {
             SceneLoader.Instance.LoadScene("Scene_Lobby");
         }
-        
+
 
 
     }
@@ -65,7 +65,7 @@ public class SpinningTopsGameManager :MonoBehaviourPunCallbacks
     #region PHOTON Callback Methods
     public override void OnJoinRandomFailed(short returnCode, string message)
     {
-      
+
         Debug.Log(message);
         uI_InformText.text = message;
 
@@ -80,24 +80,24 @@ public class SpinningTopsGameManager :MonoBehaviourPunCallbacks
 
         if (PhotonNetwork.CurrentRoom.PlayerCount == 1)
         {
-            uI_InformText.text = "Joined to " + PhotonNetwork.CurrentRoom.Name + ". Waiting for other players...";
+            uI_InformText.text = "Joined " + PhotonNetwork.CurrentRoom.Name + "\nWaiting for other players...";
 
 
         }
         else
         {
-            uI_InformText.text = "Joined to " + PhotonNetwork.CurrentRoom.Name;
+            uI_InformText.text = "Joined " + PhotonNetwork.CurrentRoom.Name;
             StartCoroutine(DeactivateAfterSeconds(uI_InformPanelGameobject, 2.0f));
         }
 
-        Debug.Log( " joined to "+ PhotonNetwork.CurrentRoom.Name);
+        Debug.Log(" joined to " + PhotonNetwork.CurrentRoom.Name);
     }
 
 
     public override void OnPlayerEnteredRoom(Player newPlayer)
     {
-        Debug.Log(newPlayer.NickName + " joined to "+ PhotonNetwork.CurrentRoom.Name+ " Player count "+ PhotonNetwork.CurrentRoom.PlayerCount);
-        uI_InformText.text = newPlayer.NickName + " joined to " + PhotonNetwork.CurrentRoom.Name + " Player count " + PhotonNetwork.CurrentRoom.PlayerCount;
+        Debug.Log(newPlayer.NickName + " joined " + PhotonNetwork.CurrentRoom.Name + " Player count " + PhotonNetwork.CurrentRoom.PlayerCount);
+        uI_InformText.text = newPlayer.NickName + " joined " + PhotonNetwork.CurrentRoom.Name + " Player count " + PhotonNetwork.CurrentRoom.PlayerCount;
 
         StartCoroutine(DeactivateAfterSeconds(uI_InformPanelGameobject, 2.0f));
 
@@ -117,13 +117,13 @@ public class SpinningTopsGameManager :MonoBehaviourPunCallbacks
     #region PRIVATE Methods
     void CreateAndJoinRoom()
     {
-        string randomRoomName = "Room" + Random.Range(0,1000);
+        string randomRoomName = "Room" + Random.Range(0, 1000);
 
         RoomOptions roomOptions = new RoomOptions();
         roomOptions.MaxPlayers = 2;
 
         //Creatin the room
-        PhotonNetwork.CreateRoom(randomRoomName,roomOptions);
+        PhotonNetwork.CreateRoom(randomRoomName, roomOptions);
 
     }
 
